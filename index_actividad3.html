@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3: Validador de Password</title>
+        <link rel="stylesheet" href="./assets/css/style_Actividad3.css">
+</head>
+<body>
+    <div class="container">
+       <h1>Sistema de Seguridad</h1>
+        
+        <!-- Imagen única -->
+        <img class="security-image" 
+             src="./assets/images/imagen4.jpg" 
+             alt="Sistema de Seguridad">
+        
+        <div class="instrucciones">
+            <strong>Instrucciones:</strong> Selecciona 3 dígitos del 1 al 9 para formar tu password y presiona "Ingresar"
+        </div>
+        
+        <div class="password-section">
+            <div class="password-label">Ingresa el Password:</div>
+            
+            <!-- Mostrar password actual -->
+            <div id="passwordDisplay" class="password-display">
+                Password actual: ---
+            </div>
+            
+            <!-- 3 Selects con dígitos del 1 al 9 -->
+            <div class="selects-container">
+                <select id="digito1" class="digit-select">
+                    <option value="">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                
+                <select id="digito2" class="digit-select">
+                    <option value="">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                
+                <select id="digito3" class="digit-select">
+                    <option value="">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            
+            <!-- Botón Ingresar -->
+            <button id="ingresarBtn" class="ingresar-btn">Ingresar</button>
+        </div>
+        
+        <!-- Párrafo para mostrar el resultado -->
+        <div id="resultado" class="resultado">
+            Selecciona un password y presiona "Ingresar"
+        </div>
+    </div>
+
+   <script src="./assets/javascripts/app_actividad_3.js"></script>
+</body>
+</html>
